@@ -76,7 +76,7 @@ body {
     }
 }
 
-
+/* Definicion manual de iconos
 .fa-warehouse {
     color: #e54d26;
 }
@@ -95,6 +95,27 @@ body {
     font-size: 4em;
     margin: 1rem;
 }
+ */
+
+/* Aplicando extend a los inconos */
+
+.fa-warehouse {
+    font-size: 4em;
+    margin: 1rem;
+    color: #e54d26;
+}
+.fa-trash-alt {
+    @extend .fa-warehouse;
+    color: #563d7c;
+}
+.fa-truck {
+    @extend .fa-warehouse;
+    color: #2163af;
+}
+
+
+/* Aplicando extend a los inconos */
+
 
 
 .fun {
@@ -123,12 +144,32 @@ footer {
 
 }
 
+
+/* caracteristicas del division a mano
 hr.light {
     border-top: 1px solid #d5d5d5;
     width: 75%;
     margin-top: .8rem;
     margin-bottom: 1rem;
 }
+ */
+
+/* aplicando MIXIN */
+
+@mixin hr-light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+
+hr.light {
+    @include hr-light;
+}
+
+
+
+
 
 
 hr.light-100 {

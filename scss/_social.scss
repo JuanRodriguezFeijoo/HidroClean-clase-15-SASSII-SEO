@@ -3,9 +3,10 @@
     padding: 3rem;
 }
 
+/* carateristicas previas a mano
+
 .fa-facebook {
     color: #3b5998;
-
 }
 
 .fa-twitter {
@@ -22,13 +23,38 @@
 
 .fa-youtube {
     color: #bb0000;
-}
+} */
+
+/* PRUEBA DE MAPAS */
+
+$redes: (
+    facebook: #3b5998,
+    twitter: #00aced,
+    google-plus-g: #dd4b39,
+    instagram: #517fa4,
+    youtube: #bb0000,
+    hover: #d5d5d5
+    );
+
+    @each $red, $color in $redes {
+        .fa-#{$red} {
+            color: $color;
+        }
+    }
 
 
+
+/*     Declaracion manual de color del hover
 .fa-facebook:hover,
 .fa-twitter:hover,
 .fa-google-plus-g:hover,
 .fa-instagram:hover,
 .fa-youtube:hover {
     color: #d5d5d5;
-}
+} */
+
+/* declaracion con mapget del color del hover*/
+.fa-facebook:hover,.fa-twitter:hover,.fa-google-plus-g:hover,.fa-instagram:hover,.fa-youtube:hover {
+    color: map-get($redes, hover);
+} 
+

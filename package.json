@@ -1,5 +1,5 @@
 {
-  "name": "clase11-hidroclean_bs_transform",
+  "name": "clase12-desafio-sassii-seo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,11 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
   },
-  "author": "JMRodriguez",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanRodriguezFeijoo/HidroClean_SASS.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.19"
-  }
+  "bugs": {
+    "url": "https://github.com/JuanRodriguezFeijoo/HidroClean_SASS/issues"
+  },
+  "homepage": "https://github.com/JuanRodriguezFeijoo/HidroClean_SASS#readme"
 }

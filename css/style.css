@@ -57,7 +57,30 @@ body {
     margin-top: .5rem;
     margin-bottom: 1rem; }
 
+/* Definicion manual de iconos
 .fa-warehouse {
+    color: #e54d26;
+}
+
+.fa-trash-alt {
+    color: #563d7c;
+}
+
+.fa-truck {
+    color: #2163af;
+}
+
+.fa-warehouse,
+.fa-trash-alt,
+.fa-truck {
+    font-size: 4em;
+    margin: 1rem;
+}
+ */
+/* Aplicando extend a los inconos */
+.fa-warehouse, .fa-trash-alt, .fa-truck {
+  font-size: 4em;
+  margin: 1rem;
   color: #e54d26; }
 
 .fa-trash-alt {
@@ -66,12 +89,7 @@ body {
 .fa-truck {
   color: #2163af; }
 
-.fa-warehouse,
-.fa-trash-alt,
-.fa-truck {
-  font-size: 4em;
-  margin: 1rem; }
-
+/* Aplicando extend a los inconos */
 .fun {
   width: 100%;
   margin-bottom: 2rem; }
@@ -83,6 +101,28 @@ body {
   font-size: 4.5em;
   padding: 3rem; }
 
+/* carateristicas previas a mano
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-google-plus-g {
+    color: #dd4b39;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-youtube {
+    color: #bb0000;
+} */
+/* PRUEBA DE MAPAS */
 .fa-facebook {
   color: #3b5998; }
 
@@ -98,11 +138,19 @@ body {
 .fa-youtube {
   color: #bb0000; }
 
+.fa-hover {
+  color: #d5d5d5; }
+
+/*     Declaracion manual de color del hover
 .fa-facebook:hover,
 .fa-twitter:hover,
 .fa-google-plus-g:hover,
 .fa-instagram:hover,
 .fa-youtube:hover {
+    color: #d5d5d5;
+} */
+/* declaracion con mapget del color del hover*/
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus-g:hover, .fa-instagram:hover, .fa-youtube:hover {
   color: #d5d5d5; }
 
 footer {
@@ -112,11 +160,23 @@ footer {
   footer a {
     color: #d5d5d5; }
 
+/* caracteristicas del division a mano
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+ */
+
+ /* aplicando MIXIN */
 hr.light {
   border-top: 1px solid #d5d5d5;
   width: 75%;
   margin-top: .8rem;
   margin-bottom: 1rem; }
+/* aplicando MIXIN */
+
 
 hr.light-100 {
   border-top: 1px solid #d5d5d5;
