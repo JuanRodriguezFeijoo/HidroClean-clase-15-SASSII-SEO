@@ -23,7 +23,7 @@ body {
 
 .carousel-inner img {
     width: 100%;
-    height: 100%;
+    height: 70vh;
 }
 
 .carousel-caption {
@@ -76,27 +76,6 @@ body {
     }
 }
 
-/* Definicion manual de iconos
-.fa-warehouse {
-    color: #e54d26;
-}
-
-.fa-trash-alt {
-    color: #563d7c;
-}
-
-.fa-truck {
-    color: #2163af;
-}
-
-.fa-warehouse,
-.fa-trash-alt,
-.fa-truck {
-    font-size: 4em;
-    margin: 1rem;
-}
- */
-
 /* Aplicando extend a los inconos */
 
 .fa-warehouse {
@@ -114,23 +93,14 @@ body {
 }
 
 
-/* Aplicando extend a los inconos */
-
-
-
-.fun {
-    width: 100%;
-    margin-bottom: 2rem;
-}
-
-.gif {
-    max-width: 100%;
+.img-container .galeriaImg{
+    width: 300px;
+    height: 300px;
+   object-fit: cover; 
 }
 
 
 @import "social";
-
-
 
 
 
@@ -144,16 +114,6 @@ footer {
 
 }
 
-
-/* caracteristicas del division a mano
-hr.light {
-    border-top: 1px solid #d5d5d5;
-    width: 75%;
-    margin-top: .8rem;
-    margin-bottom: 1rem;
-}
- */
-
 /* aplicando MIXIN */
 
 @mixin hr-light {
@@ -166,9 +126,6 @@ hr.light {
 hr.light {
     @include hr-light;
 }
-
-
-
 
 
 

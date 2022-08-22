@@ -59,53 +59,83 @@
 
 
     <!-- FORMULARIO -->
-
-
-    <form action="guardar.php" method="POST" class="container-fluid">
-      <fieldset class="formulario text-center">
-        <legend>Informacion cliente</legend>
-        <div>
-          <label for="nombre">Nombre y Apellido</label>
-          <input type="text" name="nombre">
+    <form>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <input type="email" class="form-control" placeholder="Nombre">
+          </div>
+          <div class="form-group col-md-6">
+            <input type="password" class="form-control" placeholder="Apellido">
+          </div>
         </div>
-        <div>
-          <label for="direccion">Direccion</label>
-          <input type="text" name="direccion"></input>
+        <div class="form-group">
+          <label for="inputAddress">Direccion</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Av Camano 12345">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Detalle direccion</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Barrio, lote, o Centro comercial">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Localidad</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Partido</label>
+            <select id="inputState" class="form-control">
+              <option selected>elige...</option>
+              <option>Tigre</option>
+              <option>Escobar</option>
+              <option>Pilar</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">C.P.</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+
+        </div>
+        <div class="form-row">
+          <label for="inputState">Horario de Contacto</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+          <label class="form-check-label" for="inlineCheckbox1">9 a 13</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="form-check-label" for="inlineCheckbox2">13 a 17</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="form-check-label" for="inlineCheckbox3">17 a 21</label>
+        </div>
+        <hr>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Seleccion de Servicio</label>
+          <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>Veredas</option>
+            <option>Techos</option>
+            <option>Vehiculos</option>
+            <option>Frentes</option>
+          </select>
         </div>
 
-        <div>
-          <label for="telefono">Telefono</label>
-          <input type="number" name="telefono"></input>
-          <div>
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+          <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+        </div>
 
-            <div>
-              <label for="horario">Horario de contacto</label>
-              <input type="checkbox" name="horario" value="maniana"> 9 a 13
-              <input type="checkbox" name="horario" value="tarde"> 13 a 17
-              <input type="checkbox" name="horario" value="noche"> 17 a 21
-            </div>
+        <hr>
 
-            <div>
-              <label for="servicio">Servicio</label>
-              <select name="servicio">
-                <option value=""></option>
-                <option value="vereda">Limpieza de vereda</option>
-                <option value="techo">Limpieza de techo</option>
-                <option value="completo">Limpieza general</option>
-              </select>
+        <button class="btn btn-primary" type="submit">Enviar</button>
 
-              <div>
-                <label for="subir">Adjuntar imagen</label>
-                <input type="file" name="subir" />
-              </div>
+      </form>
 
 
-              <div>
-                <input type="reset" value="Limpiar formulario">
-                <input type="submit" value="Enviar formulario">
-              </div>
 
-      </fieldset>
 
       <hr class="my-4">
 
@@ -136,37 +166,37 @@
           <div class="col-md-4">
             <hr class="light">
             <h5>Contacto</h5>
-            <hr class="light">
+              <hr class="light">
             <p>116-333-3333</p>
-            <p>email@hidroclean.com.ar</p>
-            <p>Direccion - localidad - provincia</p>
+            <p>contacto@hidroclean.com.ar</p>
+            <p>R. Caamaño, B1631 - Villa Rosa - Buenos Aires</p>
           </div>
-
-          <div class="col-md-4">
-            <hr class="light">
-            <h5>horarios</h5>
-            <hr class="light">
-            <p>Lunes a Viernes: 9 - 17</p>
-            <p>Sabados: 10 - 16</p>
-            <p>domingos: cerrado</p>
-          </div>
-          <div class="col-md-4">
-            <hr class="light">
-            <h5>Zonas</h5>
-            <hr class="light">
-            <p>Direccion - localidad - provincia</p>
-            <p>Direccion - localidad - provincia</p>
-            <p>Direccion - localidad - provincia</p>
-          </div>
-          <div class="col-12">
-            <hr class="light-100">
-            <h5>&copy; hidroclean.com</h5>
-          </div>
-
-
-
+        
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>horarios</h5>
+          <hr class="light">
+          <p>Lunes a Viernes: 9 - 17</p>
+          <p>Sabados: 10 - 16</p>
+          <p>domingos: cerrado</p>
+        </div>
+        <div class="col-md-4">
+          <hr class="light">
+          <h5>Zonas</h5>
+          <hr class="light">
+          <p>Tigre - Buenos Aires</p>
+          <p>Escobar - Buenos Aires</p>
+          <p>Pilar - Buenos Aires</p>
+      </div>
+      <div class="col-12">
+        <hr class="light-100">
+        <h5>&copy; hidroclean.com</h5>
+      </div>
+      
+      
+      
       </footer>
-
+      
 
 
 </body>
